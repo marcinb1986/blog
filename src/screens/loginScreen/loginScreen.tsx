@@ -6,6 +6,7 @@ import {
   StyledDiv,
   StyledInput,
   StyledButton,
+  StyledButton2,
   StyledParagraph,
 } from "../../components/Wrapper/styles";
 
@@ -16,8 +17,8 @@ export const LoginScreen = () => {
         <StyledDiv>
           <StyledParagraph>Log in to the blog</StyledParagraph>
         </StyledDiv>
-        <StyledInput type="email" />
-        <StyledInput type="password" />
+        <StyledInput type="email" placeholder="type Your mail" />
+        <StyledInput type="password" placeholder="type Your password" />
         <StyledButton>
           <Link to="/main" style={{ textDecoration: "none" }}>
             <StyledParagraph>Go</StyledParagraph>
@@ -29,11 +30,11 @@ export const LoginScreen = () => {
         <StyledDiv>
           <StyledParagraph>Go to blog without logging in</StyledParagraph>
         </StyledDiv>
-        <StyledButton>
+        <StyledButton2>
           <Link to="/main" style={{ textDecoration: "none" }}>
             <StyledParagraph>Go without</StyledParagraph>
           </Link>
-        </StyledButton>
+        </StyledButton2>
       </StyledSection>
     </Wrapper>
   );

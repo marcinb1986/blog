@@ -6,33 +6,34 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   width: 100vw;
   align-content: center;
   font-family: sans-serif;
+  height: 100vh;
+  margin: 0;
 `;
 
 export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 80vw;
-  flex: 1;
+  justify-content: start;
   margin: 10vw;
-  border: 2px solid gray;
-  width: 90vw;
+  border: 2px solid white;
+  width: 50vh;
+  height: 50vh;
   border-radius: 5px;
+  padding: 2vh;
 `;
 
 export const StyledDiv = styled.div`
   background-color: ${colors.textBackground};
   padding-bottom: 15px;
-  width: 65vw;
+  width: 36vh;
   height: 4vh;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 35px -4px rgba(41, 82, 230, 0.51);
-  box-shadow: 0px 0px 35px -4px rgba(41, 82, 230, 0.51);
+  margin: 5vh;
 `;
 
 export const StyledParagraph = styled.p`
@@ -41,21 +42,18 @@ export const StyledParagraph = styled.p`
   font-family: sans-serif;
 `;
 export const StyledInput = styled.input`
-  width: 80vw;
+  width: 36vh;
   background-color: ${colors.textBackground};
   height: 4vh;
   border-radius: 5px;
   margin: 1vh;
   text-align: center;
-  -webkit-box-shadow: 0px 0px 35px -4px rgba(41, 82, 230, 0.51);
-  box-shadow: 0px 0px 35px -4px rgba(41, 82, 230, 0.51);
+  border: white;
 `;
 
 export const StyledButton = styled.button`
   width: 12vh;
   background-color: ${colors.buttonColor};
-  -webkit-box-shadow: 0px 0px 35px -4px rgba(237, 38, 38, 0.51);
-  box-shadow: 0px 0px 35px -4px rgba(237, 38, 38, 0.51);
   height: 4vh;
   margin-top: 5vh;
   border-radius: 5px;
@@ -63,8 +61,32 @@ export const StyledButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  border: white;
 
-  & :hover {
-    background-color: hotpink;
+  &:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 16px 15px rgba(52, 235, 76, 0.45);
+    box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 16px 15px rgba(52, 235, 76, 0.45);
+  }
+`;
+
+export const StyledButton2 = styled.button`
+  width: 12vh;
+  background-color: ${colors.buttonColor};
+  height: 4vh;
+  margin-top: 1vh;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: white;
+
+  &:hover {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 16px 15px rgba(52, 235, 76, 0.45);
+    box-shadow: 0px 10px 13px -7px #000000,
+      5px 5px 16px 15px rgba(52, 235, 76, 0.45);
   }
 `;
