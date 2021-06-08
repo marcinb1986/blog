@@ -1,5 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
+import { Wrapper } from "../../components/Wrapper/styles";
+import { Clock } from "../../components/Clock/clock";
 
-export const MainScreen = () => {
-  return <h1>Main</h1>;
+interface MainProps {}
+
+export const MainScreen: FC<MainProps> = () => {
+  return (
+    <Wrapper>
+      <Clock />
+    </Wrapper>
+  );
 };

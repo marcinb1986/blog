@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Wrapper } from "../../components/Wrapper/styles";
+
 import {
-  Wrapper,
   StyledSection,
   StyledDiv,
   StyledInput,
   StyledButton,
   StyledButton2,
   StyledParagraph,
-} from "../../components/Wrapper/styles";
+} from "../loginScreen/styles";
 
 export const LoginScreen = () => {
   return (
