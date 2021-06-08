@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var BottomBar;","map":{"version":3,"sources":["C:/Users/marci/OneDrive/Pulpit/moja_apka/blog/src/components/BottomBar/bottomBar.tsx"],"names":["BottomBar"],"mappings":"AAEA,OAAO,IAAMA,SAAN","sourcesContent":["import React from \"react\";\r\n\r\nexport const BottomBar;\r\n"]},"metadata":{},"sourceType":"module"}

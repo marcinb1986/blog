@@ -16,7 +16,7 @@ export const StyledSection = styled.section`
 
 export const StyledDiv = styled.div`
   background-color: ${colors.textBackground};
-  padding-bottom: 15px;
+  padding-bottom: 1vh;
   width: 20vw;
   height: 3vw;
   border-radius: 5px;
