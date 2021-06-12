@@ -1,5 +1,5 @@
 import { colors } from "../../../variables";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const StyledSection = styled.section`
   display: flex;
@@ -56,6 +56,7 @@ export const StyledButton = styled.button`
     box-shadow: 0px 10px 13px -7px #000000,
       5px 5px 16px 15px rgba(52, 235, 76, 0.45);
   }
+  transition: 500ms;
 `;
 
 export const StyledButton2 = styled.button`
@@ -76,4 +77,13 @@ export const StyledButton2 = styled.button`
     box-shadow: 0px 10px 13px -7px #000000,
       5px 5px 16px 15px rgba(52, 235, 76, 0.45);
   }
+  transition: 500ms;
+`;
+
+export const StyledComment = styled.div`
+  position: absolute;
+  margin-top: 15vh;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px;
 `;

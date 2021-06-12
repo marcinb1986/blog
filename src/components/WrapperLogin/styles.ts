@@ -1,7 +1,7 @@
 import { colors } from "../../../variables";
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const WrapperLogin = styled.div`
   background-color: ${colors.mainBackgroundColor};
   display: flex;
   align-items: center;

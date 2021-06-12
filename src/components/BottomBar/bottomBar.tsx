@@ -1,25 +1,25 @@
 import React from "react";
-import { StyledBottomBar, StyledIcon } from "./styles";
+import { StyledBottomBar } from "./styles";
 import { FaFacebookSquare } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { CgMail } from "react-icons/cg";
 import { BiPhoneCall } from "react-icons/bi";
+import { StyledIcon } from "../BottomBar/styles";
 
 export const BottomBar = () => {
-  const style = { fontSize: "180%" };
   return (
     <StyledBottomBar>
       <StyledIcon>
-        <FaFacebookSquare style={style} />
+        <FaFacebookSquare />
       </StyledIcon>
       <StyledIcon>
-        <GrInstagram style={style} />
+        <GrInstagram />
       </StyledIcon>
       <StyledIcon>
-        <CgMail style={style} />
+        <CgMail />
       </StyledIcon>
       <StyledIcon>
-        <BiPhoneCall style={style} />
+        <BiPhoneCall />
       </StyledIcon>
     </StyledBottomBar>
   );
