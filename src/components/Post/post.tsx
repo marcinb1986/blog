@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledPostWrapper, StyledPost } from "./styles";
 
-export const Post = () => {
+export const PostsFiled = () => {
   return (
     <StyledPostWrapper>
       <StyledPost></StyledPost>

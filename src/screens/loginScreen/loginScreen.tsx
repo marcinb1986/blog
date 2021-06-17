@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Transition } from "react-transition-group";
 import { Link } from "react-router-dom";
-
+import { useDispatch } from "react-redux";
 import { WrapperLogin } from "../../components/WrapperLogin/styles";
-
+import { loggedInActions } from "../../store/store";
 import {
   StyledSection,
   StyledDiv,
@@ -15,6 +15,16 @@ import {
 } from "../loginScreen/styles";
 
 export const LoginScreen = () => {
+  const dispatch = useDispatch();
+
+  const withLogInHandler = () => {
+    dispatch(loggedInActions.withLogIn());
+  };
+
+  const withoutLogInHandler = () => {
+    dispatch(loggedInActions.withoutLogIn());
+  };
+
   const [isVisible, setIsVisible] = useState(false);
   const duration = 500;
   const defaultStyle = {
@@ -36,7 +46,7 @@ export const LoginScreen = () => {
         </StyledDiv>
         <StyledInput type="email" placeholder="type Your mail" />
         <StyledInput type="password" placeholder="type Your password" />
-        <StyledButton>
+        <StyledButton onClick={withLogInHandler}>
           <Link to="/main" style={{ textDecoration: "none" }}>
             <StyledParagraph>Idź</StyledParagraph>
           </Link>
@@ -48,6 +58,7 @@ export const LoginScreen = () => {
           <StyledParagraph>Idź bez logowania</StyledParagraph>
         </StyledDiv>
         <StyledButton2
+          onClick={withoutLogInHandler}
           onMouseEnter={() => setIsVisible(true)}
           onMouseLeave={() => setIsVisible(false)}
         >
